@@ -5,8 +5,8 @@ sock.connect(( "98:DA:60:01:94:CD" , 1))
 
 def sendTestCoords(theData):
 
-    print(theData)
-    sock.send(bytes(theData, 'utf-8'))
+    print(theData + '~')
+    sock.send(bytes(theData + '~', 'utf-8'))
 
 with open('imageFiles/sonic.gcode', 'r') as j:
     gcode = j.readlines()
