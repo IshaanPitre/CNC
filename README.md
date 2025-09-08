@@ -38,21 +38,6 @@ This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. It�
 
 ---
 
-## 📐 Circuit Diagram
-
-> _Coming soon: visual schematic of wiring and connections_
-
-📎 [View Circuit Diagram](#) ← _Replace with actual link once ready_
-
----
-
-## 🎥 Demo Video
-
-
-📺 [](#)
-
----
-
 ## 🚧 Current Status
 
 | Feature                | Status         | Notes                          |
