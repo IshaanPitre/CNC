@@ -4,7 +4,7 @@ This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. Itâ
 
 ---
 
-![](plotter(1).gif)
+![](plotterGif.gif)
 
 ## ðŸ§  Project Overview
 
