@@ -1,4 +1,4 @@
-import bluetooth, time
+import bluetooth, time, sys
 
 sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
 sock.connect(( "98:DA:60:01:94:CD" , 1))
@@ -11,10 +11,10 @@ def sendTestCoords(theData):
 with open('imageFiles/sonic.gcode', 'r') as j:
     gcode = j.readlines()
 
-maxX = -100000000000000000000000
-maxY = -100000000000000000000000
-minX = 10000000000000000000000
-minY = 10000000000000000000000
+maxX = -sys.maxsize
+maxY = -sys.maxsize
+minX = sys.maxsize
+minY = sys.maxsize
 
 commands = []
 count = 0
