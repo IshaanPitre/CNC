@@ -1,12 +1,12 @@
-# ✏️ ESP32 CNC Drawing Machine
+# ESP32 CNC Drawing Machine
 
-This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. It’s designed to interpret G-code and translate it into motion using stepper motors—ideal for plotting simple designs or experimenting with motion control. Built as a hobbyist exploration, it emphasizes modularity, Bluetooth control, and SD card-based file handling.
+This project is a 2-axis CNC drawing machine powered by an ESP32. It’s designed to interpret G-code and translate it into motion using stepper motors—ideal for plotting simple designs or experimenting with motion control. Built as a hobbyist exploration, it emphasizes modularity, Bluetooth control, and SD card-based file handling.
 
 ---
 
 ![](plotterGif.gif)
 
-## 🧠 Project Overview
+## Project Overview
 
 - **Purpose**: Create a simple, low-cost CNC drawing system using an ESP32
 - **Axes**: X and Y only (2-axis)
@@ -15,7 +15,7 @@ This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. It�
 
 ---
 
-## 🔩 Hardware Stack
+## Components used
 
 | Component              | Description                          |
 |------------------------|--------------------------------------|
@@ -27,11 +27,11 @@ This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. It�
 | Limit Switches         | Planned for future implementation    |
 
 
-## 🧬 Software Architecture
+## Software
 
 - **G-code Parsing**: Manual parsing via custom script
 - **Workflow**:
-  1. Convert SVG to G-code using online tool
+  1. Convert SVG to G-code
   2. Run G-code through a second script to format for ESP32
   3. Upload to SD card or send via Bluetooth
 - **Control Interface**: Bluetooth serial console (laptop → ESP32)
@@ -39,23 +39,3 @@ This project is a minimalist 2-axis CNC drawing machine powered by an ESP32. It�
 - **Web Server**: In development—will allow file uploads directly to ESP32
 
 ---
-
-## 🚧 Current Status
-
-| Feature                | Status         | Notes                          |
-|------------------------|----------------|--------------------------------|
-| G-code Parsing         | ✅ Working      | Custom format required         |
-| Bluetooth Console      | ✅ Working      | Accepts commands + file calls  |
-| SD Card Integration    | ✅ Working      | Reads G-code files             |
-| Motion Control         | ✅ Working      | Hardcoded limits               |
-| Web Server             | ⚙️ In Progress  | File upload via browser        |
-| Limit Switches         | ⏳ Planned      | For homing and safety          |
-
----
-
-## 🧵 Future Plans
-
-- Add limit switches for homing routine
-- Finalize ESP32 web server for file uploads
-- Explore basic UI/dashboard for command input
-- Improve motion accuracy and feedback
